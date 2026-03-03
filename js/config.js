@@ -73,9 +73,7 @@ const CONFIG = {
       date: "2025-04-12",
       description: "Срок: 7 дней • Гарантия: 12 месяцев",
       images: [
-        "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1524484485831-a92ffc0de03f?w=600&h=400&fit=crop",
-        "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=600&h=400&fit=crop"
+      "/volt95.github.io/images/1.jpg"  
       ],
       tags: ["коммерция"]
     },
