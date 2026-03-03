@@ -46,7 +46,7 @@ const CONFIG = {
       date: "2025-01-15",
       description: "85 м² • Срок: 6 дней • Гарантия: 12 месяцев",
       images: [
-        "/volt95.github.io/images/1.jpg"
+        "/volt95.github.io/images/7.jpg"
       ],
       tags: ["квартира"]
     },
