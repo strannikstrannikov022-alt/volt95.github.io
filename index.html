@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volt95 — Электрик в Грозном | Электромонтажные работы</title>
+  <meta name="description" content="Volt95 — профессиональный электрик в Грозном и Чеченской Республике. Электромонтажные работы, замена проводки, установка щитков, розеток, освещения. Звоните!">
+  <meta name="keywords" content="электрик Грозный, электромонтаж ЧР, замена проводки, установка щитка, Volt95">
+  <meta property="og:title" content="Volt95 — Электрик в Грозном">
+  <meta property="og:description" content="Профессиональные электромонтажные работы в Грозном и по Чеченской Республике. Быстро, качественно, с гарантией.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- Стили сайта -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- SEO: JSON-LD микроразметка -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Volt95",
+    "description": "Профессиональные электромонтажные работы в Грозном и Чеченской Республике",
+    "telephone": "+79298871237",
+    "url": "",
+    "areaServed": {
+      "@type": "City",
+      "name": "Грозный"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Грозный",
+      "addressRegion": "Чеченская Республика",
+      "addressCountry": "RU"
+    },
+    "priceRange": "По договорённости"
+  }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- НАВИГАЦИЯ -->
+<nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="#hero" class="flex items-center gap-2 text-white font-extrabold text-2xl tracking-tight">
+      <span class="text-3xl">⚡</span>
+      <span id="nav-brand">Volt95</span>
+    </a>
+    <div class="hidden md:flex items-center gap-6 text-sm font-medium text-white/80">
+      <a href="#services" class="hover:text-yellow-400 transition">Услуги</a>
+      <a href="#advantages" class="hover:text-yellow-400 transition">Преимущества</a>
+      <a href="#works" class="hover:text-yellow-400 transition">Работы</a>
+      <a href="#contacts" class="hover:text-yellow-400 transition">Контакты</a>
+    </div>
+    <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">☰</button>
+  </div>
+  <div id="mobile-menu" class="hidden md:hidden bg-slate-900/95 backdrop-blur px-4 pb-4 text-white">
+    <a href="#services" class="block py-2 border-b border-white/10" onclick="closeMobileMenu()">Услуги</a>
+    <a href="#advantages" class="block py-2 border-b border-white/10" onclick="closeMobileMenu()">Преимущества</a>
+    <a href="#works" class="block py-2 border-b border-white/10" onclick="closeMobileMenu()">Работы</a>
+    <a href="#contacts" class="block py-2" onclick="closeMobileMenu()">Контакты</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero-bg min-h-screen flex items-center relative pt-20">
+  <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 w-full relative z-10">
+
+    <h1 class="text-5xl md:text-7xl font-black text-white mb-2 leading-tight">
+      <span id="hero-brand" class="text-yellow-400">Volt95</span>
+    </h1>
+    <p id="hero-service-type" class="text-xl md:text-2xl text-yellow-400/80 font-semibold mb-4"></p>
+    <p id="hero-region" class="text-lg text-white/60 mb-6 flex items-center gap-2">
+      <span>📍</span><span></span>
+    </p>
+    <p id="hero-subtitle" class="text-lg md:text-xl text-white/80 max-w-2xl mb-10 leading-relaxed"></p>
+
+    <!-- CTA кнопки -->
+    <div class="flex flex-col sm:flex-row gap-4 mb-12">
+      <a id="hero-call" href="" class="btn-glow inline-flex items-center justify-center gap-3 bg-yellow-400 hover:bg-yellow-300 text-slate-900 font-bold text-lg px-8 py-4 rounded-xl transition shadow-lg shadow-yellow-400/20">
+        <span class="text-2xl">📞</span>Позвонить
+      </a>
+      <a id="hero-wa" href="" target="_blank" class="btn-glow inline-flex items-center justify-center gap-3 bg-green-500 hover:bg-green-400 text-white font-bold text-lg px-8 py-4 rounded-xl transition shadow-lg shadow-green-500/20">
+        <span class="text-2xl">💬</span>WhatsApp
+      </a>
+      <a id="hero-tg" href="" target="_blank" class="btn-glow inline-flex items-center justify-center gap-3 bg-blue-500 hover:bg-blue-400 text-white font-bold text-lg px-8 py-4 rounded-xl transition shadow-lg shadow-blue-500/20">
+        <span class="text-2xl">✈️</span>Telegram
+      </a>
+    </div>
+
+    <!-- Мини-статистика -->
+    <div class="flex flex-wrap gap-8 text-white/70">
+      <div class="text-center">
+        <div class="text-3xl font-black text-yellow-400">100+</div>
+        <div class="text-sm">Выполненных работ</div>
+      </div>
+      <div class="text-center">
+        <div class="text-3xl font-black text-yellow-400">100%</div>
+        <div class="text-sm">Гарантия качества</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Декоративные искры -->
+  <div class="spark" style="top:20%;left:10%;animation-delay:0s"></div>
+  <div class="spark" style="top:40%;left:80%;animation-delay:0.5s"></div>
+  <div class="spark" style="top:70%;left:30%;animation-delay:1s"></div>
+  <div class="spark" style="top:30%;left:60%;animation-delay:1.5s"></div>
+  <div class="spark" style="top:80%;left:70%;animation-delay:0.8s"></div>
+</section>
+
+<!-- УСЛУГИ -->
+<section id="services" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-14 fade-in">
+      <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">Наши услуги</h2>
+      <p class="text-lg text-slate-500 max-w-2xl mx-auto">Полный спектр электромонтажных работ для квартир, домов и коммерческих объектов</p>
+    </div>
+    <div id="services-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <!-- Генерируется из CONFIG -->
+    </div>
+  </div>
+</section>
+
+<!-- ПОЧЕМУ ВЫБИРАЮТ НАС -->
+<section id="advantages" class="py-20 bg-slate-900 text-white">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-14 fade-in">
+      <h2 class="text-4xl md:text-5xl font-black mb-4">Почему выбирают <span class="text-yellow-400">Volt95</span></h2>
+      <p class="text-lg text-white/60 max-w-2xl mx-auto">Работаем на совесть — и клиенты это ценят</p>
+    </div>
+    <div id="advantages-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Генерируется из CONFIG -->
+    </div>
+  </div>
+</section>
+
+<!-- ПРИМЕРЫ РАБОТ -->
+<section id="works" class="py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-4">
+    <div class="text-center mb-10 fade-in">
+      <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">Примеры работ</h2>
+      <p class="text-lg text-slate-500 max-w-2xl mx-auto">Каждый объект — это наша репутация. Смотрите и убеждайтесь в качестве</p>
+    </div>
+
+    <!-- Фильтры тегов -->
+    <div id="work-filters" class="flex flex-wrap justify-center gap-2 mb-10">
+      <button class="tag-filter active px-4 py-2 rounded-full text-sm font-semibold border-2 border-yellow-400 bg-yellow-400 text-slate-900" data-tag="all" onclick="filterWorks('all')">Все</button>
+    </div>
+
+    <div id="works-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Генерируется из CONFIG -->
+    </div>
+  </div>
+</section>
+
+<!-- ЛАЙТБОКС -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+  <button onclick="forceCloseLightbox(event)" class="absolute top-4 right-4 text-white text-4xl font-bold z-10 hover:text-yellow-400 transition">&times;</button>
+  <button id="lb-prev" onclick="lbNav(-1, event)" class="absolute left-4 top-1/2 -translate-y-1/2 text-white text-5xl font-bold hover:text-yellow-400 transition z-10">‹</button>
+  <button id="lb-next" onclick="lbNav(1, event)" class="absolute right-4 top-1/2 -translate-y-1/2 text-white text-5xl font-bold hover:text-yellow-400 transition z-10">›</button>
+  <img id="lb-img" src="" alt="Фото работы">
+  <div class="lb-info">
+    <div id="lb-title" class="lb-title"></div>
+    <div id="lb-counter" class="lb-counter"></div>
+  </div>
+</div>
+
+<!-- ФОРМА ЗАЯВКИ -->
+<section id="order" class="py-20 bg-slate-900 text-white">
+  <div class="max-w-2xl mx-auto px-4">
+    <div class="text-center mb-10 fade-in">
+      <h2 class="text-4xl md:text-5xl font-black mb-4">Оставить <span class="text-yellow-400">заявку</span></h2>
+      <p class="text-lg text-white/60">Заполните форму — и мы свяжемся с вами в WhatsApp или Telegram</p>
+    </div>
+    <div class="bg-slate-800 rounded-2xl p-6 md:p-10 fade-in">
+      <div class="space-y-4">
+        <div>
+          <label class="block text-sm font-semibold text-white/70 mb-2">Ваше имя</label>
+          <input id="form-name" type="text" placeholder="Как к вам обращаться?" class="w-full px-4 py-3 rounded-xl bg-slate-700 text-white border border-slate-600 focus:border-yellow-400 focus:outline-none transition text-lg">
+        </div>
+        <div>
+          <label class="block text-sm font-semibold text-white/70 mb-2">Сообщение</label>
+          <textarea id="form-message" rows="4" placeholder="Опишите, что нужно сделать..." class="w-full px-4 py-3 rounded-xl bg-slate-700 text-white border border-slate-600 focus:border-yellow-400 focus:outline-none transition text-lg resize-none"></textarea>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 pt-2">
+          <button onclick="sendToWhatsApp()" class="flex-1 inline-flex items-center justify-center gap-2 bg-green-500 hover:bg-green-400 text-white font-bold text-lg px-6 py-4 rounded-xl transition">
+            <span class="text-xl">💬</span>Отправить в WhatsApp
+          </button>
+          <button onclick="sendToTelegram()" class="flex-1 inline-flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-bold text-lg px-6 py-4 rounded-xl transition">
+            <span class="text-xl">✈️</span>Отправить в Telegram
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- КОНТАКТЫ -->
+<section id="contacts" class="py-20 bg-white">
+  <div class="max-w-5xl mx-auto px-4">
+    <div class="text-center mb-14 fade-in">
+      <h2 class="text-4xl md:text-5xl font-black text-slate-900 mb-4">Контакты</h2>
+      <p class="text-lg text-slate-500">Свяжитесь с нами любым удобным способом</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
+      <!-- Карточка контактов -->
+      <div class="bg-slate-50 rounded-2xl p-8 space-y-6">
+        <div>
+          <h3 class="text-xl font-bold text-slate-900 mb-1">⚡ <span id="contact-brand">Volt95</span></h3>
+          <p id="contact-region" class="text-slate-500"></p>
+        </div>
+        <div class="space-y-4">
+          <a id="contact-phone" href="" class="flex items-center gap-3 text-lg font-semibold text-slate-800 hover:text-yellow-600 transition">
+            <span class="text-2xl">📞</span><span id="contact-phone-text"></span>
+          </a>
+          <a id="contact-wa" href="" target="_blank" class="flex items-center gap-3 text-lg font-semibold text-green-600 hover:text-green-500 transition">
+            <span class="text-2xl">💬</span>WhatsApp
+          </a>
+          <a id="contact-tg" href="" target="_blank" class="flex items-center gap-3 text-lg font-semibold text-blue-500 hover:text-blue-400 transition">
+            <span class="text-2xl">✈️</span>Telegram
+          </a>
+        </div>
+        <a id="contact-map" href="" target="_blank" class="inline-flex items-center gap-2 text-yellow-600 hover:text-yellow-500 font-semibold transition">
+          📍 Показать на карте →
+        </a>
+      </div>
+
+      <!-- Большие CTA -->
+      <div class="space-y-4 flex flex-col justify-center">
+        <a id="cta-call" href="" class="btn-glow flex items-center justify-center gap-3 bg-yellow-400 hover:bg-yellow-300 text-slate-900 font-bold text-xl px-8 py-5 rounded-xl transition shadow-lg">
+          <span class="text-3xl">📞</span>Позвонить
+        </a>
+        <a id="cta-wa" href="" target="_blank" class="btn-glow flex items-center justify-center gap-3 bg-green-500 hover:bg-green-400 text-white font-bold text-xl px-8 py-5 rounded-xl transition shadow-lg">
+          <span class="text-3xl">💬</span>Написать в WhatsApp
+        </a>
+        <a id="cta-tg" href="" target="_blank" class="btn-glow flex items-center justify-center gap-3 bg-blue-500 hover:bg-blue-400 text-white font-bold text-xl px-8 py-5 rounded-xl transition shadow-lg">
+          <span class="text-3xl">✈️</span>Написать в Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer class="bg-slate-900 text-white/50 py-8">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <p class="flex items-center justify-center gap-2 text-lg font-bold text-white/80 mb-2">
+      <span>⚡</span><span id="footer-brand">Volt95</span>
+    </p>
+    <p id="footer-service" class="text-sm mb-1"></p>
+    <p id="footer-region" class="text-sm mb-4"></p>
+    <p class="text-xs">&copy; <span id="footer-year"></span> <span id="footer-brand2">Volt95</span>. Все права защищены.</p>
+  </div>
+</footer>
+
+<!-- ФИКСИРОВАННАЯ МОБИЛЬНАЯ ПАНЕЛЬ -->
+<div class="mobile-bar">
+  <a id="mob-call" href="" class="flex-1 flex flex-col items-center justify-center gap-1 bg-yellow-400 text-slate-900 font-bold py-3 rounded-xl text-sm">
+    <span class="text-xl">📞</span>Звонок
+  </a>
+  <a id="mob-wa" href="" target="_blank" class="flex-1 flex flex-col items-center justify-center gap-1 bg-green-500 text-white font-bold py-3 rounded-xl text-sm">
+    <span class="text-xl">💬</span>WhatsApp
+  </a>
+  <a id="mob-tg" href="" target="_blank" class="flex-1 flex flex-col items-center justify-center gap-1 bg-blue-500 text-white font-bold py-3 rounded-xl text-sm">
+    <span class="text-xl">✈️</span>Telegram
+  </a>
+</div>
+
+<!-- СКРИПТЫ -->
+<script src="js/config.js"></script>
+<script src="js/app.js"></script>
+
+<!--
+============================================================
+📘 СТРУКТУРА ПРОЕКТА
+============================================================
+
+volt95/
+├── index.html          ← HTML-разметка (этот файл)
+├── css/
+│   └── styles.css      ← Все стили
+├── js/
+│   ├── config.js       ← ⚡ ВСЕ ДАННЫЕ САЙТА (меняйте здесь!)
+│   └── app.js          ← Логика сайта (обычно не трогать)
+└── images/
+    ├── work-01.jpg     ← Фото ваших работ
+    ├── work-02.jpg
+    └── ...
+
+============================================================
+📘 КАК РЕДАКТИРОВАТЬ
+============================================================
+
+1. ДАННЫЕ САЙТА → редактируйте js/config.js
+   - brandName, region, телефон, ссылки
+   - services — список услуг
+   - works — примеры работ (+ фото)
+   - reviews — отзывы
+   - faq — вопросы и ответы
+
+2. СТИЛИ → редактируйте css/styles.css
+   - Цвета, анимации, размеры
+
+3. РАЗМЕТКА → редактируйте index.html
+   - Структура секций, порядок блоков
+
+4. ЛОГИКА → редактируйте js/app.js
+   - Карусели, фильтры, лайтбокс
+   - Обычно менять не нужно
+
+============================================================
+📘 КАК ДОБАВИТЬ РАБОТУ
+============================================================
+
+Откройте js/config.js, найдите массив works,
+добавьте объект:
+
+{
+  title: "Название работы",
+  date: "2025-06-01",
+  description: "Описание работы",
+  images: [
+    "images/photo-1.jpg",
+    "images/photo-2.jpg"
+  ],
+  tags: ["квартира", "ремонт"]
+}
+
+Положите фото в папку images/.
+Обновите страницу — работа появится автоматически!
+
+============================================================
+📘 КАК ЗАЛИТЬ НА GITHUB PAGES
+============================================================
+
+1. Создайте репозиторий на github.com
+2. Загрузите ВСЕ файлы:
+   - index.html
+   - css/styles.css
+   - js/config.js
+   - js/app.js
+   - папку images/ с фото
+3. Settings → Pages → Branch: main → Save
+4. Через 1-2 мин сайт доступен:
+   https://ВАШ-ЛОГИН.github.io/volt95/
+
+============================================================
+-->
+
+</body>
+</html>
